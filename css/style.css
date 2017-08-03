@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+header #main-header {
+    color: white;
+    text-transform: uppercase;
+}

@@ -1,0 +1,52 @@
+@media screen and (min-width: 1171px) {
+    header {
+        height: 100vh;
+        background: url(../img/man-1.jpg) no-repeat center center;
+        background-size: cover;
+        position: relative;
+    }
+    header #main-header {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        /*        samo center 50% sprawia, ze tekst zaczyna sie od 50% wysokosci, lecz nie jest do konca wycentrowany, stackoverflow mowi, iz uzycie top% oraz transform: translatey(-50%) powoduje, ze tekst jest calkowicie wysrodkowany wzgledem swojej wysokosci co powoduje idealne wysrodkowanie wzgledem osi oy*/
+    }
+    h2 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1170px) {
+    header {
+        position: relative;
+        height: 70vh;
+        background: url(../img/man-2.jpg) no-repeat center;
+        background-size: cover;
+    }
+    header #main-header {
+        position: absolute;
+        top: 0%;
+        right: 0;
+        /*        samo center 50% sprawia, ze tekst zaczyna sie od 50% wysokosci, lecz nie jest do konca wycentrowany, stackoverflow mowi, iz uzycie top% oraz transform: translatey(-50%) powoduje, ze tekst jest calkowicie wysrodkowany wzgledem swojej wysokosci co powoduje idealne wysrodkowanie wzgledem osi oy*/
+    }
+    h2 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    header {
+        height: 50vh;
+        background: url("../img/man-1.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    header #main-header {
+        color: black;
+        padding-top: 50vh;
+        text-align: center;
+    }
+    h2 {
+        margin: 0;
+    }
+}
